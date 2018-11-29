@@ -30,7 +30,7 @@ for filename in glob.glob('faces/*.jpg'): #assuming gif
     im=face_recognition.load_image_file(filename)
     fe=face_recognition.face_encodings(im)[0]
 
-    print("Reading Face {0} for {1}".format(filename, person_name))
+    print("Init Face {0} for {1}".format(filename, person_name))
 
     known_images.append(im)
     known_persons.append(person_name)
